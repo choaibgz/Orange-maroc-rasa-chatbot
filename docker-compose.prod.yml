@@ -1,0 +1,13 @@
+services:
+  rasa:
+    ports: []
+    restart: unless-stopped
+
+  actions:
+    ports: []
+    restart: unless-stopped
+
+  web:
+    ports:
+      - "80:80"
+    restart: unless-stopped

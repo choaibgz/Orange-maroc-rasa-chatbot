@@ -1,0 +1,72 @@
+version: "3.1"
+
+rules:
+  - rule: Saluer l'utilisateur
+    steps:
+      - intent: saluer
+      - action: utter_saluer
+
+  - rule: Dire au revoir
+    steps:
+      - intent: aurevoir
+      - action: utter_aurevoir
+
+  - rule: Repondre aux remerciements
+    steps:
+      - intent: remercier
+      - action: utter_remercier
+
+  - rule: Expliquer le bot
+    steps:
+      - intent: bot_challenge
+      - action: utter_bot_challenge
+
+  - rule: Repondre aux offres mobile
+    steps:
+      - intent: offres_mobile
+      - action: utter_offres_mobile
+
+  - rule: Repondre aux offres fibre
+    steps:
+      - intent: offres_fibre
+      - action: utter_offres_fibre
+
+  - rule: Repondre au suivi de consommation
+    steps:
+      - intent: suivi_conso
+      - action: utter_suivi_conso
+
+  - rule: Repondre aux factures
+    steps:
+      - intent: factures
+      - action: utter_factures
+
+  - rule: Repondre a l'assistance technique
+    steps:
+      - intent: assistance_technique
+      - action: utter_assistance_technique
+
+  - rule: Repondre aux agences
+    steps:
+      - intent: agences
+      - action: utter_agences
+
+  - rule: Creer une reclamation
+    steps:
+      - intent: reclamation
+      - action: action_create_ticket
+
+  - rule: Repondre au contact humain
+    steps:
+      - intent: contact_humain
+      - action: utter_contact_humain
+
+  - rule: Repondre au roaming
+    steps:
+      - intent: roaming
+      - action: utter_roaming
+
+  - rule: Repondre au paiement
+    steps:
+      - intent: paiement
+      - action: utter_paiement

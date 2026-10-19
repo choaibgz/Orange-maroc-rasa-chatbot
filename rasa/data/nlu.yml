@@ -1,0 +1,127 @@
+version: "3.1"
+
+nlu:
+  - intent: saluer
+    examples: |
+      - bonjour
+      - salut
+      - salam
+      - bonsoir
+      - hello
+      - coucou
+      - bonjour orange
+
+  - intent: aurevoir
+    examples: |
+      - au revoir
+      - a bientot
+      - merci au revoir
+      - bonne journee
+      - bye
+      - c'est tout
+
+  - intent: remercier
+    examples: |
+      - merci
+      - merci beaucoup
+      - parfait merci
+      - c'est gentil
+      - merci pour votre aide
+
+  - intent: bot_challenge
+    examples: |
+      - tu es un robot
+      - qui es-tu
+      - es-tu humain
+      - je parle avec qui
+      - tu es quoi
+
+  - intent: offres_mobile
+    examples: |
+      - quelles sont vos offres mobile
+      - je cherche un forfait mobile
+      - donne-moi les forfaits orange
+      - avez-vous des offres 4g
+      - je veux une offre telephone
+      - quels forfaits internet mobile proposez-vous
+
+  - intent: offres_fibre
+    examples: |
+      - je veux la fibre
+      - quelles sont les offres fibre
+      - avez-vous internet maison
+      - je cherche une connexion fibre optique
+      - comment installer la fibre orange
+      - mon adresse est-elle eligible a la fibre
+
+  - intent: suivi_conso
+    examples: |
+      - comment suivre ma consommation
+      - il me reste combien de data
+      - je veux connaitre mon solde
+      - verifier ma consommation internet
+      - comment voir mon credit
+      - suivi conso
+
+  - intent: factures
+    examples: |
+      - je veux ma facture
+      - consulter mes factures
+      - ou trouver ma facture orange
+      - telecharger ma facture
+      - j'ai une question sur ma facture
+      - facture trop elevee
+
+  - intent: assistance_technique
+    examples: |
+      - internet ne marche pas
+      - ma connexion est lente
+      - je n'ai pas de reseau
+      - mon routeur ne fonctionne pas
+      - probleme technique
+      - la fibre est coupee
+      - mon telephone ne capte pas
+
+  - intent: agences
+    examples: |
+      - ou est l'agence la plus proche
+      - trouver une agence orange
+      - horaires agence orange
+      - je veux aller en boutique
+      - agence a casablanca
+      - boutique orange maroc
+
+  - intent: reclamation
+    examples: |
+      - je veux faire une reclamation
+      - deposer une plainte
+      - ouvrir un ticket
+      - je ne suis pas satisfait
+      - signaler un probleme
+      - faire une demande de support
+
+  - intent: contact_humain
+    examples: |
+      - je veux parler a un conseiller
+      - appeler le service client
+      - mettez-moi en contact avec un agent
+      - humain
+      - conseiller orange
+      - assistance par telephone
+
+  - intent: roaming
+    examples: |
+      - activer le roaming
+      - je voyage a l'etranger
+      - tarifs roaming
+      - internet a l'international
+      - utiliser mon forfait hors maroc
+
+  - intent: paiement
+    examples: |
+      - comment payer ma facture
+      - paiement en ligne
+      - payer par carte bancaire
+      - regler ma facture orange
+      - ou payer ma facture
+      - paiement orange et moi

@@ -1,0 +1,27 @@
+version: "3.1"
+
+stories:
+  - story: Parcours facture puis paiement
+    steps:
+      - intent: saluer
+      - action: utter_saluer
+      - intent: factures
+      - action: utter_factures
+      - intent: paiement
+      - action: utter_paiement
+      - intent: remercier
+      - action: utter_remercier
+
+  - story: Parcours probleme technique puis conseiller
+    steps:
+      - intent: assistance_technique
+      - action: utter_assistance_technique
+      - intent: contact_humain
+      - action: utter_contact_humain
+
+  - story: Parcours offre fibre puis agence
+    steps:
+      - intent: offres_fibre
+      - action: utter_offres_fibre
+      - intent: agences
+      - action: utter_agences

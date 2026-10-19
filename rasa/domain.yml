@@ -1,0 +1,68 @@
+version: "3.1"
+
+intents:
+  - saluer
+  - aurevoir
+  - remercier
+  - bot_challenge
+  - offres_mobile
+  - offres_fibre
+  - suivi_conso
+  - factures
+  - assistance_technique
+  - agences
+  - reclamation
+  - contact_humain
+  - roaming
+  - paiement
+
+responses:
+  utter_saluer:
+    - text: "Bonjour, bienvenue chez Orange Maroc. Comment puis-je vous aider aujourd'hui ?"
+    - text: "Bonjour. Je suis l'assistant Orange Maroc, pret a vous aider."
+
+  utter_aurevoir:
+    - text: "Merci pour votre visite. A bientot chez Orange Maroc."
+
+  utter_remercier:
+    - text: "Avec plaisir. Je reste disponible si vous avez besoin d'autre chose."
+
+  utter_bot_challenge:
+    - text: "Je suis un chatbot Rasa cree pour assister les clients Orange Maroc dans ce mini-projet."
+
+  utter_offres_mobile:
+    - text: "Orange Maroc propose des forfaits mobile avec appels, internet 4G/5G et options internationales. Vous pouvez choisir une offre selon votre budget et votre consommation data."
+
+  utter_offres_fibre:
+    - text: "Pour la fibre, Orange Maroc propose des offres internet haut debit adaptees au foyer et au teletravail. L'eligibilite depend de votre adresse."
+
+  utter_suivi_conso:
+    - text: "Vous pouvez suivre votre consommation via l'application Orange et Moi, votre espace client ou les codes USSD disponibles pour votre offre."
+
+  utter_factures:
+    - text: "Vos factures sont disponibles dans l'espace client Orange et Moi. Vous pouvez les consulter, les telecharger et verifier le detail de consommation."
+
+  utter_assistance_technique:
+    - text: "Je vous conseille de redemarrer votre routeur ou telephone, verifier le solde/data, puis tester la couverture reseau. Si le probleme persiste, je peux vous orienter vers un conseiller."
+
+  utter_agences:
+    - text: "Vous pouvez trouver l'agence Orange la plus proche depuis le site Orange Maroc ou l'application Orange et Moi, en activant la localisation."
+
+  utter_contact_humain:
+    - text: "Je peux transmettre votre demande a un conseiller. Pour une assistance directe, utilisez le centre d'appel Orange Maroc ou rendez-vous en agence."
+
+  utter_roaming:
+    - text: "Avant de voyager, activez l'option roaming et verifiez les tarifs du pays de destination depuis Orange et Moi ou le site Orange Maroc."
+
+  utter_paiement:
+    - text: "Vous pouvez payer votre facture via Orange et Moi, carte bancaire, espace client, agence Orange ou points de paiement partenaires."
+
+  utter_default:
+    - text: "Je n'ai pas bien compris votre demande. Pouvez-vous la reformuler ?"
+
+actions:
+  - action_create_ticket
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assistant Orange Maroc</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="brand-panel" aria-label="Orange Maroc">
+        <div class="brand-mark">orange</div>
+        <div class="brand-copy">
+          <p class="eyebrow">Service client intelligent</p>
+          <h1>Assistant Orange Maroc</h1>
+          <p>Un chatbot Rasa pour les offres, factures, assistance technique et reclamations.</p>
+        </div>
+        <div class="status-card">
+          <span class="status-dot"></span>
+          <span>Rasa REST API</span>
+        </div>
+      </section>
+
+      <section class="chat-panel" aria-label="Conversation">
+        <header class="chat-header">
+          <div>
+            <p class="eyebrow">Conversation</p>
+            <h2>Support client</h2>
+          </div>
+          <button class="icon-button" id="clearChat" type="button" title="Nouvelle conversation" aria-label="Nouvelle conversation">
+            <span aria-hidden="true">R</span>
+          </button>
+        </header>
+
+        <div class="quick-actions" aria-label="Suggestions">
+          <button type="button" data-message="Quelles sont vos offres mobile ?">Offres mobile</button>
+          <button type="button" data-message="Comment payer ma facture ?">Paiement</button>
+          <button type="button" data-message="Internet ne marche pas">Assistance</button>
+          <button type="button" data-message="Je veux faire une reclamation">Reclamation</button>
+        </div>
+
+        <div class="messages" id="messages" aria-live="polite"></div>
+
+        <form class="composer" id="chatForm">
+          <input id="messageInput" name="message" type="text" autocomplete="off" placeholder="Ecrivez votre message..." required>
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

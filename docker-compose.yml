@@ -1,0 +1,37 @@
+services:
+  rasa:
+    build:
+      context: ./rasa
+    container_name: orange-rasa
+    ports:
+      - "5005:5005"
+    depends_on:
+      - actions
+    networks:
+      - orange-net
+
+  actions:
+    build:
+      context: ./actions
+    container_name: orange-actions
+    ports:
+      - "5055:5055"
+    networks:
+      - orange-net
+
+  web:
+    image: nginx:1.27-alpine
+    container_name: orange-web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./web:/usr/share/nginx/html:ro
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - rasa
+    networks:
+      - orange-net
+
+networks:
+  orange-net:
+    driver: bridge
